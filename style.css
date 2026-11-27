@@ -1,0 +1,206 @@
+/* General Styling */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Main Container */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  background-color: white;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #8b0000;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background-color: #d4a017;
+  color: #222;
+}
+
+/* Home Section */
+#home {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("images/cross-blazers.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+  text-align: center;
+  padding: 100px 25px;
+  min-height: 450px;
+}
+
+.hero-content h1 {
+  font-size: 38px;
+  color: #ffd700;
+}
+
+.hero-content h2 {
+  color: white;
+}
+
+.join-button,
+.back-button {
+  display: inline-block;
+  background-color: #d4a017;
+  color: #222;
+  text-decoration: none;
+  padding: 12px 25px;
+  margin-top: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.join-button:hover,
+.back-button:hover {
+  background-color: #ffcc33;
+}
+
+/* Section Styling */
+section {
+  padding: 35px 30px;
+  margin-bottom: 10px;
+}
+
+#about {
+  background-color: #fffaf0;
+}
+
+#program {
+  background-color: #ffffff;
+}
+
+#join {
+  background-color: #fffaf0;
+}
+
+/* Grouping Selector */
+h1,
+h2 {
+  color: #8b0000;
+}
+
+/* Element Selector */
+p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Class Selector */
+.activity-card {
+  background-color: #ffffff;
+  border: 2px solid #8b0000;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.activity-card h3 {
+  color: #8b0000;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ac0f0f;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #8b0000;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #fff0f0;
+}
+
+/* Lists */
+ol,
+ul {
+  line-height: 2;
+}
+
+/* Footer */
+footer {
+  background-color: #8b0000;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+footer p {
+  margin: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  nav ul {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  nav ul li a {
+    padding: 10px;
+  }
+
+  #home {
+    padding: 65px 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 27px;
+  }
+
+  section {
+    padding: 25px 15px;
+  }
+
+  table {
+    font-size: 13px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+}
